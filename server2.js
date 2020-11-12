@@ -88,9 +88,9 @@ var getCourseTitle = function(args) {
 
 var addCourse = function(args) {
    
-   const id =  coursesData[coursesData.length -1].id + 1;
+   const id =  coursesData.length + 1;
    args.course.id = id;
-   console.log("ARGS", args)
+   
     coursesData.push(args.course)
     return coursesData
 }
